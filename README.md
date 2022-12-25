@@ -11,3 +11,7 @@
 
 
 ### 기술
+- 햅틱 커스텀 힘듬
+  - CoreHaptics API 는 watchOS 지원 x
+  - WatchKit haptic type (WKHapticType- I think it was Click) 사용해 loop 돌리면 가능하지만 클릭 사이에 100밀리초가 있어 해상도가 낮은편
+  - https://developer.apple.com/forums/thread/681215
