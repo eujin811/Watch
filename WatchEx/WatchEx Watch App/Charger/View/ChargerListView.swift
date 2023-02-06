@@ -51,9 +51,18 @@ struct ChargerListView: View {
                 ChargerDetailView()
                     .environmentObject(ChargerDetailStore(myLocation: store.myLocation, item: store.showItem))
             }
+    
+fileprivate struct CellView: View {
+    
+    var body: some View {
+        VStack {
+            Text("충전 여부")
+                .font(.system(size: 8, weight: .semibold))
             
+            Text("충전기 정보")
+                .font(.system(size: 6))
         }
-        .listStyle(CarouselListStyle())
+        .cornerRadius(2)
     }
 }
 
