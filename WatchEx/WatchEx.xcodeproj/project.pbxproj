@@ -22,6 +22,7 @@
 		968B7ADF29757D6200EC045E /* WatchEx_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B7ADE29757D6200EC045E /* WatchEx_Watch_AppTests.swift */; };
 		968B7AE929757D6200EC045E /* WatchEx_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B7AE829757D6200EC045E /* WatchEx_Watch_AppUITests.swift */; };
 		968B7AEB29757D6200EC045E /* WatchEx_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B7AEA29757D6200EC045E /* WatchEx_Watch_AppUITestsLaunchTests.swift */; };
+		96AAC6A529912A3E00280DE2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AAC6A429912A3E00280DE2 /* MainView.swift */; };
 		96AAC6A829912A9600280DE2 /* ChargerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AAC6A729912A9600280DE2 /* ChargerAPI.swift */; };
 		96AAC6AB29912B5900280DE2 /* ChargerListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AAC6AA29912B5900280DE2 /* ChargerListModel.swift */; };
 		96AAC6AD29912BBD00280DE2 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AAC6AC29912BBD00280DE2 /* Location.swift */; };
@@ -102,6 +103,7 @@
 		968B7AE429757D6200EC045E /* WatchEx Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WatchEx Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		968B7AE829757D6200EC045E /* WatchEx_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchEx_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		968B7AEA29757D6200EC045E /* WatchEx_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchEx_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		96AAC6A429912A3E00280DE2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		96AAC6A729912A9600280DE2 /* ChargerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargerAPI.swift; sourceTree = "<group>"; };
 		96AAC6AA29912B5900280DE2 /* ChargerListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargerListModel.swift; sourceTree = "<group>"; };
 		96AAC6AC29912BBD00280DE2 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				96AAC6A629912A8500280DE2 /* Util */,
 				96AAC6A329912A2B00280DE2 /* Charger */,
 				968B7ACD29757D6000EC045E /* WatchExApp.swift */,
+				96AAC6A429912A3E00280DE2 /* MainView.swift */,
 				968B7ACF29757D6000EC045E /* ContentView.swift */,
 				968B7AD129757D6200EC045E /* Assets.xcassets */,
 				968B7AD329757D6200EC045E /* Preview Content */,
@@ -541,6 +544,7 @@
 				96AAC6B029912C0900280DE2 /* ChargerListView.swift in Sources */,
 				968B7AD029757D6000EC045E /* ContentView.swift in Sources */,
 				96AAC6A829912A9600280DE2 /* ChargerAPI.swift in Sources */,
+				96AAC6A529912A3E00280DE2 /* MainView.swift in Sources */,
 				96AAC6B229912C4000280DE2 /* ChargerDetailView.swift in Sources */,
 				968B7ACE29757D6000EC045E /* WatchExApp.swift in Sources */,
 				96AAC6AD29912BBD00280DE2 /* Location.swift in Sources */,
