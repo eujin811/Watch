@@ -48,7 +48,7 @@ struct MainView: View {
                     .environmentObject(ChargerListStore(location: .init(lat: 37.5666101, lon: 126.97838810)))
             }
             
-            Text("내 좌표 \(store.myLocation.lon)")
+//            Text("내 좌표 \(store.myLocation.lon)")
         }
     }
 }
