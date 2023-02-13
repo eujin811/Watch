@@ -11,6 +11,7 @@
 		966DC3C3299A50890076C94F /* WCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966DC3C1299A50890076C94F /* WCError.swift */; };
 		966DC3C6299A54450076C94F /* ProtectConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966DC3C5299A54450076C94F /* ProtectConstants.swift */; };
 		966DC3C7299A54450076C94F /* ProtectConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966DC3C5299A54450076C94F /* ProtectConstants.swift */; };
+		966DC3CB299A573B0076C94F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966DC3CA299A573B0076C94F /* Constants.swift */; };
 		968B7AA629757D5E00EC045E /* WatchExApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B7AA529757D5E00EC045E /* WatchExApp.swift */; };
 		968B7AA829757D5E00EC045E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B7AA729757D5E00EC045E /* ContentView.swift */; };
 		968B7AAA29757D6000EC045E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 968B7AA929757D6000EC045E /* Assets.xcassets */; };
@@ -91,6 +92,7 @@
 /* Begin PBXFileReference section */
 		966DC3C1299A50890076C94F /* WCError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCError.swift; sourceTree = "<group>"; };
 		966DC3C5299A54450076C94F /* ProtectConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtectConstants.swift; sourceTree = "<group>"; };
+		966DC3CA299A573B0076C94F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		968B7AA229757D5E00EC045E /* WatchEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		968B7AA529757D5E00EC045E /* WatchExApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchExApp.swift; sourceTree = "<group>"; };
 		968B7AA729757D5E00EC045E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -184,6 +186,14 @@
 			path = Protect;
 			sourceTree = "<group>";
 		};
+		966DC3C9299A572E0076C94F /* Costants */ = {
+			isa = PBXGroup;
+			children = (
+				966DC3CA299A573B0076C94F /* Constants.swift */,
+			);
+			path = Costants;
+			sourceTree = "<group>";
+		};
 		968B7A9929757D5D00EC045E = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +261,7 @@
 		968B7ACC29757D6000EC045E /* WatchEx Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				966DC3C9299A572E0076C94F /* Costants */,
 				966DC3C4299A541C0076C94F /* Protect */,
 				96AAC6B629912D8900280DE2 /* WatchEx-Watch-App-Info.plist */,
 				96AAC6A629912A8500280DE2 /* Util */,
@@ -591,6 +602,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				966DC3C3299A50890076C94F /* WCError.swift in Sources */,
+				966DC3CB299A573B0076C94F /* Constants.swift in Sources */,
 				96AAC6B029912C0900280DE2 /* ChargerListView.swift in Sources */,
 				968B7AD029757D6000EC045E /* ContentView.swift in Sources */,
 				96AAC6A829912A9600280DE2 /* ChargerAPI.swift in Sources */,
