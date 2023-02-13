@@ -14,6 +14,7 @@
 		966DC3CB299A573B0076C94F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966DC3CA299A573B0076C94F /* Constants.swift */; };
 		966DC3CE299A58A20076C94F /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 966DC3CD299A58A20076C94F /* Then */; };
 		966DC3D0299A58B50076C94F /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 966DC3CF299A58B50076C94F /* Then */; };
+		966DC3D2299A6D540076C94F /* APIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966DC3D1299A6D540076C94F /* APIWorker.swift */; };
 		968B7AA629757D5E00EC045E /* WatchExApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B7AA529757D5E00EC045E /* WatchExApp.swift */; };
 		968B7AA829757D5E00EC045E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B7AA729757D5E00EC045E /* ContentView.swift */; };
 		968B7AAA29757D6000EC045E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 968B7AA929757D6000EC045E /* Assets.xcassets */; };
@@ -95,6 +96,7 @@
 		966DC3C1299A50890076C94F /* WCError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCError.swift; sourceTree = "<group>"; };
 		966DC3C5299A54450076C94F /* ProtectConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtectConstants.swift; sourceTree = "<group>"; };
 		966DC3CA299A573B0076C94F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		966DC3D1299A6D540076C94F /* APIWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIWorker.swift; sourceTree = "<group>"; };
 		968B7AA229757D5E00EC045E /* WatchEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		968B7AA529757D5E00EC045E /* WatchExApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchExApp.swift; sourceTree = "<group>"; };
 		968B7AA729757D5E00EC045E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -317,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				96AAC6A729912A9600280DE2 /* ChargerAPI.swift */,
+				966DC3D1299A6D540076C94F /* APIWorker.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -618,6 +621,7 @@
 				968B7ACE29757D6000EC045E /* WatchExApp.swift in Sources */,
 				96AAC6AD29912BBD00280DE2 /* Location.swift in Sources */,
 				96AAC6AB29912B5900280DE2 /* ChargerListModel.swift in Sources */,
+				966DC3D2299A6D540076C94F /* APIWorker.swift in Sources */,
 				966DC3C7299A54450076C94F /* ProtectConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
