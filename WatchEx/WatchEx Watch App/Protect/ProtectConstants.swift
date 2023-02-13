@@ -10,6 +10,6 @@ import Foundation
 enum ProtectConstants {
     
     enum APIURL: String {
-        
+        case dev = "https://dev.soft-berry"
     }
 }
