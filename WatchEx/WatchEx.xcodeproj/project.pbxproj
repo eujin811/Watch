@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		966DC3C2299A50890076C94F /* WCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966DC3C1299A50890076C94F /* WCError.swift */; };
+		966DC3C3299A50890076C94F /* WCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966DC3C1299A50890076C94F /* WCError.swift */; };
 		968B7AA629757D5E00EC045E /* WatchExApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B7AA529757D5E00EC045E /* WatchExApp.swift */; };
 		968B7AA829757D5E00EC045E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B7AA729757D5E00EC045E /* ContentView.swift */; };
 		968B7AAA29757D6000EC045E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 968B7AA929757D6000EC045E /* Assets.xcassets */; };
@@ -85,6 +87,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		966DC3C1299A50890076C94F /* WCError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCError.swift; sourceTree = "<group>"; };
 		968B7AA229757D5E00EC045E /* WatchEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		968B7AA529757D5E00EC045E /* WatchExApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchExApp.swift; sourceTree = "<group>"; };
 		968B7AA729757D5E00EC045E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -162,6 +165,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		966DC3C0299A50560076C94F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				966DC3C1299A50890076C94F /* WCError.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		968B7A9929757D5D00EC045E = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +203,7 @@
 		968B7AA429757D5E00EC045E /* WatchEx */ = {
 			isa = PBXGroup;
 			children = (
+				966DC3C0299A50560076C94F /* Common */,
 				968B7AA529757D5E00EC045E /* WatchExApp.swift */,
 				968B7AA729757D5E00EC045E /* ContentView.swift */,
 				968B7AA929757D6000EC045E /* Assets.xcassets */,
@@ -538,6 +550,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				966DC3C2299A50890076C94F /* WCError.swift in Sources */,
 				968B7AA829757D5E00EC045E /* ContentView.swift in Sources */,
 				968B7AA629757D5E00EC045E /* WatchExApp.swift in Sources */,
 			);
@@ -564,6 +577,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				966DC3C3299A50890076C94F /* WCError.swift in Sources */,
 				96AAC6B029912C0900280DE2 /* ChargerListView.swift in Sources */,
 				968B7AD029757D6000EC045E /* ContentView.swift in Sources */,
 				96AAC6A829912A9600280DE2 /* ChargerAPI.swift in Sources */,
