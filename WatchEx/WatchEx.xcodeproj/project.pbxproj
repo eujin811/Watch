@@ -12,6 +12,8 @@
 		966DC3C6299A54450076C94F /* ProtectConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966DC3C5299A54450076C94F /* ProtectConstants.swift */; };
 		966DC3C7299A54450076C94F /* ProtectConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966DC3C5299A54450076C94F /* ProtectConstants.swift */; };
 		966DC3CB299A573B0076C94F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966DC3CA299A573B0076C94F /* Constants.swift */; };
+		966DC3CE299A58A20076C94F /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 966DC3CD299A58A20076C94F /* Then */; };
+		966DC3D0299A58B50076C94F /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 966DC3CF299A58B50076C94F /* Then */; };
 		968B7AA629757D5E00EC045E /* WatchExApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B7AA529757D5E00EC045E /* WatchExApp.swift */; };
 		968B7AA829757D5E00EC045E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B7AA729757D5E00EC045E /* ContentView.swift */; };
 		968B7AAA29757D6000EC045E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 968B7AA929757D6000EC045E /* Assets.xcassets */; };
@@ -128,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96AAC6B529912D7500280DE2 /* Alamofire in Frameworks */,
+				966DC3CE299A58A20076C94F /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96AAC6B929912D9A00280DE2 /* Alamofire in Frameworks */,
+				966DC3D0299A58B50076C94F /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +366,7 @@
 			name = WatchEx;
 			packageProductDependencies = (
 				96AAC6B429912D7500280DE2 /* Alamofire */,
+				966DC3CD299A58A20076C94F /* Then */,
 			);
 			productName = WatchEx;
 			productReference = 968B7AA229757D5E00EC045E /* WatchEx.app */;
@@ -418,6 +423,7 @@
 			name = "WatchEx Watch App";
 			packageProductDependencies = (
 				96AAC6B829912D9A00280DE2 /* Alamofire */,
+				966DC3CF299A58B50076C94F /* Then */,
 			);
 			productName = "WatchEx Watch App";
 			productReference = 968B7AC829757D6000EC045E /* WatchEx Watch App.app */;
@@ -504,6 +510,7 @@
 			mainGroup = 968B7A9929757D5D00EC045E;
 			packageReferences = (
 				96AAC6B329912D7500280DE2 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				966DC3CC299A58A20076C94F /* XCRemoteSwiftPackageReference "Then" */,
 			);
 			productRefGroup = 968B7AA329757D5E00EC045E /* Products */;
 			projectDirPath = "";
@@ -1127,6 +1134,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		966DC3CC299A58A20076C94F /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		96AAC6B329912D7500280DE2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -1138,6 +1153,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		966DC3CD299A58A20076C94F /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 966DC3CC299A58A20076C94F /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		966DC3CF299A58B50076C94F /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 966DC3CC299A58A20076C94F /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
 		96AAC6B429912D7500280DE2 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 96AAC6B329912D7500280DE2 /* XCRemoteSwiftPackageReference "Alamofire" */;

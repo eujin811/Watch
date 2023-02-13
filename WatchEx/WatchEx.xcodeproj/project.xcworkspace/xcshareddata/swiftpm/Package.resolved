@@ -8,6 +8,15 @@
         "branch" : "master",
         "revision" : "91367aaed5985f0dce98bf5487ea0c3fc76e9949"
       }
+    },
+    {
+      "identity" : "then",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/devxoul/Then",
+      "state" : {
+        "branch" : "master",
+        "revision" : "d41ef523faef0f911369f79c0b96815d9dbb6d7a"
+      }
     }
   ],
   "version" : 2
