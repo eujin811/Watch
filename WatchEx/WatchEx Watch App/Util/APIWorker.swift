@@ -40,29 +40,28 @@ struct APIWorker {
         url urlStr: String,
         method: HTTPMethod,
         parameters: HTTPParameters? = nil,
-        headers: APIHeaders? = nil//,
-//        completion: @escaping (Result<Data, WCError>) -> Void
-    ) throws -> URLSessionDataTask {
+        headers: APIHeaders? = nil,
+        completion: @escaping (Result<Data, WCError>) -> Void
+    ) {
         guard let request = request(url: urlStr, method: method, parameters: parameters, headers: headers) else {
-//            return completion(.failure(.dataDecode))
             print(WCError.dataDecode.message)
-            throw WCError.dataDecode
+            return
         }
         
-        return URLSession.shared.dataTask(with: request) //{ data, response, error in
-//            guard error != nil else {
-//                completion(.failure(.dataTask))
-//                return
-//            }
-//            guard let _data = data else {
-//                completion(.failure(.unknownData))
-//                return
-//            }
-//
-//            completion(.success(_data))
-//        }
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard error != nil else {
+                completion(.failure(.dataTask))
+                return
+            }
+            guard let _data = data else {
+                completion(.failure(.unknownData))
+                return
+            }
+
+            completion(.success(_data))
+        }
         
-//        task.resume()
+        task.resume()
     }
     
     private func request(
@@ -79,7 +78,13 @@ struct APIWorker {
         if let _parameters = parameters, let body = try? JSONSerialization.data(withJSONObject: _parameters, options: []) {
             request.httpBody = body
         }
-        request.allHTTPHeaderFields = headers?.dictionary
+        
+        if let _headers = headers {
+            request.allHTTPHeaderFields = _headers.dictionary
+        }
+            
+        print("request \(request) \(method.rawValue) \(parameters), \(headers)")
+        return request
     }
     
 }
