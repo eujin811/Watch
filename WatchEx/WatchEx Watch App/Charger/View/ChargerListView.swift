@@ -7,11 +7,14 @@
 
 import SwiftUI
 
+import Combine
 final class ChargerListStore: ObservableObject {
     @Published var chargerList = [ChargerListModel.ChargerListItem] ()
     @Published var myLocation: Location
     @Published var showItem: ChargerListModel.ChargerListItem!
     private let restAPI = ChargerAPI()
+    
+    var cancellables = Set<AnyCancellable>()
     
     init(location: Location) {
         self.myLocation = location
