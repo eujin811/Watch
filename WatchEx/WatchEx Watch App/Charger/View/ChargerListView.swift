@@ -53,28 +53,37 @@ struct ChargerListView: View {
         List(store.chargerList, id: \.id) { item in
             VStack {
                 HStack {
-                    Image(systemName: "photo.circle")
-                        .frame(width: 12, height: 12)
                     Text(item.operation)    // fontsize 8
-                        .font(.system(size: 8, weight: .semibold))
+                        .font(.system(size: 12, weight: .semibold))
                     Spacer()
                     Text("xx km")
+                        .font(.system(size: 12, weight: .semibold))
+                    Image(systemName: "mappin")
+                                           .frame(width: 12, height: 12)
                 }
-                .frame(height: 14)
                 .padding(.top, 10)
-                
+                .padding(.leading, 10)
+                .padding(.trailing, 8)
+                                
                 Text(item.stationName)  // fontSize 12
-                    .font(.system(size: 12, weight: .bold))
-                    .frame(height: 16)
+                    .font(.system(size: 16, weight: .bold))
+                    .padding(.top, 8)
+                    .padding(.leading, 10)
+                    
+                Divider()
+                    .padding(.top, 8)
+                    .padding(.leading, 10)
+                    .padding(.trailing, 10)
+                // 대충 line
                 
-                HStack {
-                    Text("급속 어쩌고~ 완속 어쩌고")
-                        .font(.system(size: 10, weight: .semibold))
+                VStack {
+                    ChargerItemInfoView(type: "급속", count: "1/1", chargerDetail: "단독.100kw")
+                    ChargerItemInfoView(type: "완속", count: "1/1", chargerDetail: "양팔.7kw")
                 }
-                
-                }
+                .padding(.bottom, 12)
             }
-            .cornerRadius(3)
+            .frame(height: 117)
+            .cornerRadius(2)
             
         }
         .listStyle(CarouselListStyle())
