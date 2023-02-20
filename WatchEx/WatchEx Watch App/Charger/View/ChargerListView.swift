@@ -72,45 +72,14 @@ struct ChargerListView: View {
                         .font(.system(size: 10, weight: .semibold))
                 }
                 
-                ScrollView(.horizontal) {
-                    LazyHStack {
-                        CellView()
-                            .frame(width: 91, height: 35)
-                            .background(.gray)
-                        
-                        CellView()
-                            .frame(width: 91, height: 35)
-                            .background(.gray)
-                        
-                        CellView()
-                            .frame(width: 91, height: 35)
-                            .background(.gray)
-                        
-                    }
                 }
             }
-            .frame(height: 119)
             .cornerRadius(3)
             
         }
         .listStyle(CarouselListStyle())
         .padding(.leading, 8)
         .padding(.trailing, 8)
-    }
-}
-
-
-fileprivate struct CellView: View {
-    
-    var body: some View {
-        VStack {
-            Text("충전 여부")
-                .font(.system(size: 8, weight: .semibold))
-            
-            Text("충전기 정보")
-                .font(.system(size: 6))
-        }
-        .cornerRadius(2)
     }
 }
 
