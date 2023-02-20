@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 enum HTTPMethod: String {
     case get = "GET"
@@ -36,32 +37,43 @@ struct APIHeaders {
 
 struct APIWorker {
     typealias HTTPParameters = [String: Any]
-    func request(
+    
+    func request<T: Decodable>(
         url urlStr: String,
         method: HTTPMethod,
         parameters: HTTPParameters? = nil,
-        headers: APIHeaders? = nil,
-        completion: @escaping (Result<Data, WCError>) -> Void
-    ) {
-        guard let request = request(url: urlStr, method: method, parameters: parameters, headers: headers) else {
-            print(WCError.dataDecode.message)
-            return
-        }
+        headers: APIHeaders? = nil
+    ) -> AnyPublisher<T, APIError> where T:Decodable {
+            guard let request = request(url: urlStr, method: method, parameters: parameters, headers: headers)
+            else { return Fail(error: APIError.urlRequest)
+                .eraseToAnyPublisher() }
         
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            guard error != nil else {
-                completion(.failure(.dataTask))
-                return
+        return URLSession.shared
+            .dataTaskPublisher(for: request)
+            .receive(on: DispatchQueue.main)
+            .mapError { _ in APIError.unexpectedResponse }
+            .flatMap { data, response -> AnyPublisher<T, APIError> in
+                guard let response = response as? HTTPURLResponse else {
+                    return Fail(error: APIError.unexpectedResponse)
+                        .eraseToAnyPublisher()
+                }
+                
+                switch response.statusCode {
+                case 200...299:
+                    return Just(data)
+                        .decode(type: T.self, decoder: JSONDecoder())
+                        .mapError { error in
+                            print("Error Check : \(error)")
+                            return .unexpectedResponse
+                        }
+                        .eraseToAnyPublisher()
+                default:
+                    return Fail(error: APIError.httpCode(response.statusCode))
+                        .eraseToAnyPublisher()
+                }
+                
             }
-            guard let _data = data else {
-                completion(.failure(.unknownData))
-                return
-            }
-
-            completion(.success(_data))
-        }
-        
-        task.resume()
+            .eraseToAnyPublisher()
     }
     
     private func request(
@@ -83,7 +95,6 @@ struct APIWorker {
             request.allHTTPHeaderFields = _headers.dictionary
         }
             
-        print("request \(request) \(method.rawValue) \(parameters), \(headers)")
         return request
     }
     
