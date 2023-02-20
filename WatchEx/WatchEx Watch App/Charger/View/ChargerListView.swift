@@ -83,6 +83,36 @@ struct ChargerListView: View {
     }
 }
 
+fileprivate struct ChargerItemInfoView: View {
+    @State var type: String
+    @State var count: String
+    @State var chargerDetail: String
+    
+    var body: some View {
+        HStack {
+            Image(systemName: "moon.fill")
+                .frame(width: 12, height: 12)
+                .foregroundColor(.green)
+                .padding(.leading, 10)
+
+            Text(type)
+                .font(.system(size: 12, weight: .bold))
+            
+            Text(count)
+                .font(.system(size: 12, weight: .bold))
+                .foregroundColor(.green)
+                .padding(.leading, 5)
+
+            Spacer()
+            
+            Text(chargerDetail)
+                .font(.system(size: 12, weight: .thin))
+                .padding(.leading, 11)
+
+        }
+    }
+}
+
 struct ChargerListView_Previews: PreviewProvider {
     static var previews: some View {
         ChargerListView()
