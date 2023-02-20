@@ -19,22 +19,6 @@ final class ChargerListStore: ObservableObject {
     init(location: Location) {
         self.myLocation = location
         
-//        let data = restAPI.getStationList(lat: location.lat, lon: location.lon) { result in
-//            switch result {
-//            case .success(let chargerListModel):
-//                guard chargerListModel.code == 1000 else {
-//                    print("sever error) code: \(chargerListModel.code)")
-//                    return
-//                }
-//
-//                self.chargerList = chargerListModel.itemList
-//                self.showItem = chargerListModel.itemList.first
-//
-//            case .failure(let error):
-//                print("에러발생 \(error)")
-//            }
-//        }
-        
         let requestStationList = restAPI.getStationList(lat: location.lat, lon: location.lon)
         
         requestStationList?.sink(
