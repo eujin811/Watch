@@ -7,6 +7,29 @@
 
 import Foundation
 
+enum APIError: Error {
+    case unexpectedResponse
+    case httpCode(Int)
+    case invalidURL
+    case urlRequest
+
+    var message: String {
+        switch self {
+        case .unexpectedResponse:
+            return "Response Error"
+            
+        case .httpCode(let code):
+            return "http Code Error: \(code)"
+            
+        case .invalidURL:
+            return "invalid url Error"
+            
+        case .urlRequest:
+            return "urlRequest"
+        }
+    }
+}
+
 enum WCError: Error {
     case unknownData
     case unknownType
