@@ -24,7 +24,6 @@
 		968B7AC329757D6000EC045E /* WatchExUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B7AC229757D6000EC045E /* WatchExUITestsLaunchTests.swift */; };
 		968B7AC929757D6000EC045E /* WatchEx Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 968B7AC829757D6000EC045E /* WatchEx Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		968B7ACE29757D6000EC045E /* WatchExApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B7ACD29757D6000EC045E /* WatchExApp.swift */; };
-		968B7AD029757D6000EC045E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B7ACF29757D6000EC045E /* ContentView.swift */; };
 		968B7AD229757D6200EC045E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 968B7AD129757D6200EC045E /* Assets.xcassets */; };
 		968B7AD529757D6200EC045E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 968B7AD429757D6200EC045E /* Preview Assets.xcassets */; };
 		968B7ADF29757D6200EC045E /* WatchEx_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B7ADE29757D6200EC045E /* WatchEx_Watch_AppTests.swift */; };
@@ -109,7 +108,6 @@
 		968B7AC229757D6000EC045E /* WatchExUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchExUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		968B7AC829757D6000EC045E /* WatchEx Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchEx Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		968B7ACD29757D6000EC045E /* WatchExApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchExApp.swift; sourceTree = "<group>"; };
-		968B7ACF29757D6000EC045E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		968B7AD129757D6200EC045E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		968B7AD429757D6200EC045E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		968B7ADA29757D6200EC045E /* WatchEx Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WatchEx Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -267,14 +265,13 @@
 		968B7ACC29757D6000EC045E /* WatchEx Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				968B7ACD29757D6000EC045E /* WatchExApp.swift */,
+				96AAC6A629912A8500280DE2 /* Util */,
 				966DC3C9299A572E0076C94F /* Costants */,
 				966DC3C4299A541C0076C94F /* Protect */,
 				96AAC6B629912D8900280DE2 /* WatchEx-Watch-App-Info.plist */,
-				96AAC6A629912A8500280DE2 /* Util */,
 				96AAC6A329912A2B00280DE2 /* Charger */,
-				968B7ACD29757D6000EC045E /* WatchExApp.swift */,
 				96AAC6A429912A3E00280DE2 /* MainView.swift */,
-				968B7ACF29757D6000EC045E /* ContentView.swift */,
 				968B7AD129757D6200EC045E /* Assets.xcassets */,
 				968B7AD329757D6200EC045E /* Preview Content */,
 			);
@@ -614,7 +611,6 @@
 				966DC3C3299A50890076C94F /* WCError.swift in Sources */,
 				966DC3CB299A573B0076C94F /* Constants.swift in Sources */,
 				96AAC6B029912C0900280DE2 /* ChargerListView.swift in Sources */,
-				968B7AD029757D6000EC045E /* ContentView.swift in Sources */,
 				96AAC6A829912A9600280DE2 /* ChargerAPI.swift in Sources */,
 				96AAC6A529912A3E00280DE2 /* MainView.swift in Sources */,
 				96AAC6B229912C4000280DE2 /* ChargerDetailView.swift in Sources */,
