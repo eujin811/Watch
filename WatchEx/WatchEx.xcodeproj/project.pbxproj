@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9636DC7C29B4C12A0068A7E4 /* LocationAuthorityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9636DC7B29B4C12A0068A7E4 /* LocationAuthorityView.swift */; };
 		9636DC7F29B4C2920068A7E4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9636DC7E29B4C2920068A7E4 /* Colors.swift */; };
 		9636DC8029B4C2980068A7E4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9636DC7E29B4C2920068A7E4 /* Colors.swift */; };
 		9636DC8329B4C3420068A7E4 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9636DC8229B4C3420068A7E4 /* Color+.swift */; };
@@ -96,6 +97,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9636DC7B29B4C12A0068A7E4 /* LocationAuthorityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAuthorityView.swift; sourceTree = "<group>"; };
 		9636DC7E29B4C2920068A7E4 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		9636DC8229B4C3420068A7E4 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		966DC3C1299A50890076C94F /* WCError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCError.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 		9636DC7A29B4C0610068A7E4 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				9636DC7B29B4C12A0068A7E4 /* LocationAuthorityView.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -642,6 +645,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9636DC7C29B4C12A0068A7E4 /* LocationAuthorityView.swift in Sources */,
 				966DC3C3299A50890076C94F /* WCError.swift in Sources */,
 				966DC3CB299A573B0076C94F /* Constants.swift in Sources */,
 				96AAC6B029912C0900280DE2 /* ChargerListView.swift in Sources */,
