@@ -201,10 +201,18 @@
 		9636DC8129B4C2F60068A7E4 /* GeneralComponent */ = {
 			isa = PBXGroup;
 			children = (
+				9636DC8529B4D8070068A7E4 /* Extension */,
 				9636DC7D29B4C2620068A7E4 /* DesignComposition */,
-				9636DC8229B4C3420068A7E4 /* Color+.swift */,
 			);
 			path = GeneralComponent;
+			sourceTree = "<group>";
+		};
+		9636DC8529B4D8070068A7E4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9636DC8229B4C3420068A7E4 /* Color+.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		966DC3C0299A50560076C94F /* Common */ = {
