@@ -12,6 +12,7 @@
 		9636DC8029B4C2980068A7E4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9636DC7E29B4C2920068A7E4 /* Colors.swift */; };
 		9636DC8329B4C3420068A7E4 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9636DC8229B4C3420068A7E4 /* Color+.swift */; };
 		9636DC8429B4C3580068A7E4 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9636DC8229B4C3420068A7E4 /* Color+.swift */; };
+		9636DC8829B4D8750068A7E4 /* Font+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9636DC8729B4D8750068A7E4 /* Font+.swift */; };
 		966DC3C2299A50890076C94F /* WCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966DC3C1299A50890076C94F /* WCError.swift */; };
 		966DC3C3299A50890076C94F /* WCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966DC3C1299A50890076C94F /* WCError.swift */; };
 		966DC3C6299A54450076C94F /* ProtectConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966DC3C5299A54450076C94F /* ProtectConstants.swift */; };
@@ -100,6 +101,7 @@
 		9636DC7B29B4C12A0068A7E4 /* LocationAuthorityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAuthorityView.swift; sourceTree = "<group>"; };
 		9636DC7E29B4C2920068A7E4 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		9636DC8229B4C3420068A7E4 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+		9636DC8729B4D8750068A7E4 /* Font+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+.swift"; sourceTree = "<group>"; };
 		966DC3C1299A50890076C94F /* WCError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCError.swift; sourceTree = "<group>"; };
 		966DC3C5299A54450076C94F /* ProtectConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtectConstants.swift; sourceTree = "<group>"; };
 		966DC3CA299A573B0076C94F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				9636DC8229B4C3420068A7E4 /* Color+.swift */,
+				9636DC8729B4D8750068A7E4 /* Font+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -659,6 +662,7 @@
 				96AAC6B029912C0900280DE2 /* ChargerListView.swift in Sources */,
 				96AAC6A829912A9600280DE2 /* ChargerAPI.swift in Sources */,
 				96AAC6A529912A3E00280DE2 /* MainView.swift in Sources */,
+				9636DC8829B4D8750068A7E4 /* Font+.swift in Sources */,
 				96AAC6B229912C4000280DE2 /* ChargerDetailView.swift in Sources */,
 				968B7ACE29757D6000EC045E /* WatchExApp.swift in Sources */,
 				9636DC7F29B4C2920068A7E4 /* Colors.swift in Sources */,
